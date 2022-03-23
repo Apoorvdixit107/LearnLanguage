@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="#FFB300"
+        android:background="#4A3730"
+        app:tabIndicatorColor="#FB8C00"
+        app:tabIndicatorAnimationMode="elastic"
+
+        app:tabTextColor="#F3F3EC"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/cse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cse stuff" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="coding" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"/>
+
+
+</LinearLayout>
